@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>My Portfolio</title>
+<style>
+  /* Reset & base */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #0a192f;
+    color: #ccd6f6;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  a {
+    color: #64ffda;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* Container */
+  .container {
+    max-width: 320px;
+    margin: auto;
+    padding: 20px 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  header h1 {
+    font-size: 2.25rem;
+    margin-bottom: 5px;
+    color: #64ffda;
+  }
+  header p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #8892b0;
+    margin-top: 0;
+  }
+
+  section {
+    margin-bottom: 25px;
+  }
+  section h2 {
+    font-size: 1.5rem;
+    color: #64ffda;
+    border-bottom: 2px solid #64ffda;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+
+  /* About */
+  .about p {
+    font-size: 0.9rem;
+    color: #a8b2d1;
+  }
+
+  /* Skills */
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .skill {
+    background-color: #112240;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    box-shadow: 0 0 5px #64ffda33;
+    user-select: none;
+  }
+
+  /* Projects */
+  .projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .project-title {
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    color: #64ffda;
+  }
+
+
+
+
+  /* Contact */
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 15px;
+  }
+  .contact-links a {
+    font-size: 1.5rem;
+  }
+
+  button {
+    background-color: #64ffda;
+    color: #0a192f;
+    font-weight: 700;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  button:hover {
+    background-color: #52c7b8;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    font-size: 0.75rem;
+    padding: 10px;
+    background: #020c1b;
+    color: #8892b0;
+  }
+
+
+
+
+</style>
+</head>
+<body>
+  <div class="container" role="main">
+    <header>
+      <h1>Philip Christian J. Banog</h1>
+      <p>UI/UX Designer</p>
+    </header>
+
+    <section class="about" aria-label="About me">
+      <h2>About Me</h2>
+      <p>yo 👋 i'm a beginner UI/UX designer just startin’ out, but I got that fire fr 🔥
+        i’m all about crafting clean, user-friendly interfaces that actually make sense — no extra fluff, no confusion, just vibes + usability 💻✨
+        
+        i’m learning the ropes of Figma, user flows, wireframes, and prototyping — and every pixel i move is one step closer to greatness 😤💪
+        i care about people, and i wanna design apps & websites that feel like they were made for you, not just some pretty BS
+        
+        catch me sketchin' ideas, tweaking layouts 'til 3am, and gettin’ inspired by dope design from all over the internet 🌐💡
+    
+        ready to collab, grow, and level TF up 🚀
+        let’s make some magic — one screen at a time 🎨📱</p>
+    </section>
+
+    <section class="skills" aria-label="Skills">
+      <h2>Skills</h2>
+      <div class="skills-list" role="list">
+        <span class="skill" role="listitem">Proficient in Microsoft Office</span>
+        <span class="skill" role="listitem">Basic Photoshop</span>
+        <span class="skill" role="listitem">UI/UX</span>
+      </div>
+    </section>
+
+    <section >
+      <h2>Projects</h2>
+      <div class="projects-list">
+        <img src= "project1.png" alt="" srcset="">
+        <h4>BCTMO Vehicle Impound System <br>
+          my role is a UI/UX designer in this Group
+        </h4>
+      </div>
+    </section>
+
+    <section class="contact" aria-label="Contact me">
+      <h2>Contact Me</h2>
+      <div class="contact-links" aria-label="Social media links">
+        <a href="https://github.com/Z4ck111" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg height="24" width="24" fill="#64ffda" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1C5.925 1 1 5.926 1 12.006c0 4.86 3.146 8.994 7.515 10.45.55.1.75-.237.75-.525 0-.255-.01-.93-.01-1.826-3.06.672-3.7-1.475-3.7-1.475-.5-1.274-1.225-1.615-1.225-1.615-1.005-.685.078-.67.078-.67 1.11.08 1.69 1.116 1.69 1.116.983 1.69 2.575 1.2 3.204.917.1-.713.385-1.2.7-1.476-2.44-.276-5-1.22-5-5.433 0-1.2.425-2.18 1.116-2.95-.115-.276-.485-1.394.105-2.906 0 0 .917-.294 3 .9a10.42 10.42 0 015.455 0c2.083-1.194 3-.9 3-.9.588 1.513.218 2.63.104 2.906.692.772 1.114 1.75 1.114 2.95 0 4.223-2.57 5.15-5.022 5.42.39.337.743 1 .743 2.02 0 1.458-.013 2.632-.013 2.993 0 .29.194.635.755.527C19.86 21 23 16.866 23 12.006 23 5.926 18.075 1 12 1z"/></svg>
+        </a>
+        <a href="https://mail.google.com/mail/u/1/?hl=en#inbox" aria-label="Email">
+          <svg height="24" width="24" fill="#64ffda" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 2v.511l-8 5-8-5V6h16zm0 12H4v-9.49l7.274 4.546a1 1 0 001.452 0L20 10.51V18z"/></svg>
+        </a>
+      </div>
+
+
+  <footer>
+    &copy; Philip Christian Banog. All rights reserved.
+  </footer>
+
+</body>
+</html>
+
